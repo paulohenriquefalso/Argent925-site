@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Argent 925 | Jewelry</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400&display=swap" rel="stylesheet" />
+    <style>
+        :root {
+            --gold: #D4AF37;
+            --dark-grey: #333;
+            --white: #ffffff;
+            --off-white: #fafafa;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Lato', sans-serif;
+            background-color: var(--white);
+            color: var(--dark-grey);
+            line-height: 1.6;
+            text-align: center;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Cinzel', serif;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--gold);
+            margin-bottom: 20px;
+        }
+
+        /* Logo */
+        .logo-container {
+            margin: 30px 0;
+        }
+
+        .logo-container img {
+            height: 80px;
+            width: auto;
+        }
+
+        /* Catalog Section */
+        .section-title {
+            margin: 40px 0 20px;
+        }
+
+        .catalog-container {
+            max-width: 600px;
+            margin: 0 auto 80px;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 40px;
+        }
+
+        .product-card {
+            background: var(--off-white);
+            border: 1px solid #eee;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+
+        .product-card img {
+            width: 280px;
+            height: 280px;
+            object-fit: contain;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            background: white;
+            padding: 10px;
+        }
+
+        .product-name {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: var(--dark-grey);
+        }
+
+        .product-price {
+            color: var(--gold);
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+        }
+
+        .btn-view {
+            padding: 12px 30px;
+            background: var(--gold);
+            color: white;
+            border: none;
+            cursor: pointer;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+            border-radius: 25px;
+            transition: background 0.3s;
+        }
+
+        .btn-view:hover {
+            background: #b8962d;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1a1a1a;
+            color: var(--white);
+            padding: 40px 5%;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        .footer-content {
+            max-width: 600px;
+            margin: 0 auto 20px;
+        }
+
+        .footer-content p {
+            margin: 8px 0;
+        }
+
+        .social-link {
+            color: var(--gold);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .instagram-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            background-color: var(--gold);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            font-family: 'Cinzel', serif;
+            transition: background-color 0.3s;
+        }
+
+        .instagram-button:hover {
+            background-color: #b8962d;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Logo -->
+    <div class="logo-container">
+        <img src="unnamed_file_0" alt="Argent 925 Logo" />
+    </div>
+
+    <!-- Catalog Section -->
+    <section id="rings">
+        <h2 class="section-title">Exclusive Rings</h2>
+        <div class="catalog-container">
+            <!-- Anel de coração rosa (imagem gerada IA) -->
+            <div class="product-card">
+                <img src="pink_heart_ring.png" alt="Anel de Coração Rosa" />
+                <h3 class="product-name">Pink Heart Ring</h3>
+                <p class="product-price">R$ 40,00</p>
+                <button class="btn-view">Add to Bag</button>
+            </div>
+
+            <!-- Anel de coração vermelho com espada (imagem enviada) -->
+            <div class="product-card">
+                <img src="unnamed_file_3" alt="Anel de Coração Vermelho com Espada" />
+                <h3 class="product-name">Red Heart with Sword Ring</h3>
+                <p class="product-price">R$ 30,00</p>
+                <button class="btn-view">Add to Bag</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>Phone: <strong>+1 (888) 123-4567</strong></p>
+            <p>Instagram: <a href="#" class="social-link">@Argent925</a></p>
+            
+            <a href="https://www.instagram.com/ellen.rsu?igsh=MXR1NjM5NGx4dDNrZQ==" target="_blank" class="instagram-button">
+                INSTAGRAM @ellen.rsu
+            </a>
+        </div>
+        <p>&copy; 2026 Argent 925. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
